@@ -7,34 +7,23 @@
 
 A [docsify.js](https://docsify.js.org) plugin for rendering example panels content from markdown.
 
-## First things first
-
-Before you go any further reading, if you are @ the moment in github.com, you won't be able to see any changes.
-
-To see the plugin in action make sure you're on this url:
-
-https://www.github.com/todo
-
-
-
 <!-- panels:start -->
 
 <!-- div:title-panel -->
 
 ## Demo
 
-
 <!-- div:left-panel -->
 
-Docsify.js is outstanding! but in its nature it uses markdown files and they're just too harsh to customize. so this plugin has the intention of enabling docsify.js to have a bit better customizing experience. checkout the right side of this documentation for a demonstration.
+If you are on widescreen, checkout the right side panels.
 
 <!-- div:right-panel -->
 
-This right panel is already a demo. but you can see more in:
+This panel is a demo. but you can see more in:
 
-* [Fairlay API] (https://fairlay.com/api)
+*  [Fairlay API](https://fairlay.com/api)
 
-<small>please contact me if you used docsify-example-panels. i would like to display it here too.</small>
+<small>please contact me if you use docsify-example-panels. i would like to display it here too.</small>
 
 <!-- div:title-panel -->
 
@@ -42,23 +31,20 @@ This right panel is already a demo. but you can see more in:
 
 <!-- div:left-panel -->
 
-
 **Advantages**
-* Create div panels really fast and anywhere in your .md file.
-* Choose the classnames for your divs and stylize them.
-* Use CSS custom properties to change it's structure.
-* Prefab CSS classes for "left-panel", "right-panel", "title-panel".
+*  Create div panels really fast and anywhere in your .md file.
+*  Choose the classnames for your divs and stylize them.
+*  Use CSS custom properties to change it's structure.
+*  Prefab CSS classes for "left-panel", "right-panel" and "title-panel".
 
 **Compatibility**
-* Fully compatible with other docsify plugins such as:
-  1. [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
-  1. [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
-  1. copy-code
-  1. google analytics
-  1. search
+*  Fully compatible with major docsify plugins such as:
+  1.  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
+  2.  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
+  3.  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
+  4.  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
 
-
-* Fully compatible with any markdown or html features:
+*  Fully compatible with any markdown or html features:
 
 <details>
   <summary>code snippets </summary>
@@ -85,42 +71,37 @@ This right panel is already a demo. but you can see more in:
   <img src="https://avatars0.githubusercontent.com/u/5666881?s=400&u=d94729bdf16611396a720b338c115ec0be656ba6&v=4" width="64" height="64">
 </details>
 
-
 **Limitations**
 
-* *Nesting* (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
-
+*  *Nesting* (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
 
 <!-- div:right-panel -->
 
 For multi-language documentation you can use it along with [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/):
 
 <!-- tabs:start -->
-  #### **HTML**
-  A title-panel and a paragraph in html.
-  ```html
-  <!-- HTML -->
-  <h1>Heading</h1>
-  <p>This is a paragraph.</p>
-  ```
+### **HTML**
+```html
+<!-- HTML -->
+<h1>Heading</h1>
+<p>This is a paragraph.</p>
+```
 
-  #### **JS**
-  JavaScript function to sum two numbers
-  ```js
-  // JavaScript
-  function add(a, b) {
-    return Number(a + b);
-  }
-  ```
+### **JS**
+```js
+// JavaScript
+function add(a, b) {
+  return Number(a + b);
+}
+```
 
-  #### **CSS**
-  Stylesheet rule to paint white the body element
-  ```css
-  /* CSS */
-  body {
-    background: white;
-  }
-  ```
+### **CSS**
+```css
+/* CSS */
+body {
+  background: white;
+}
+```
 <!-- tabs:end -->
 
 <!-- div:title-panel -->
@@ -133,13 +114,13 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 <!-- div:right-panel -->
 
-   ```html
-   <!-- docsify (latest v4.x.x)-->
-   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+```html
+<!-- docsify (latest v4.x.x)-->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 
-   <!-- docsify-example-panels (latest v1.x.x) -->
-   <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels@1"></script>
-   ```
+<!-- docsify-example-panels (latest v1.x.x) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-example-panels@1"></script>
+```
 
 <!-- div:title-panel -->
 
@@ -147,63 +128,64 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 <!-- div:left-panel -->
 
-1. **Define a panel in markdown file using `panel:start` and `panel:end` HTML comments.**
+1.  Define a panel in markdown file using `panel:start` and `panel:end` HTML comments.
 
   HTML comments are used to mark the start and end of a panel. The use of HTML comments prevents any markup from being displayed when markdown is rendered as HTML outside of your docsify site (e.g. Github, GitLab, etc).
 
 <!-- div:right-panel -->
 
-<p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag, beware when ctrl + c & v</p>
+<p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag, beware when copying</p>
 
 ```markdown
-   <!--panels:start-->
+<!--panels:start-->
 
-   (...)
+(...) - Awesome div wrapper
 
-   <!--panels:end-->
+<!--panels:end-->
 ```
 
 <!-- div:left-panel -->
 
-2. **Define divs within a panel in markdown file using HTML comments.**
+2. Define divs within a panel in markdown file using HTML comments.
 
   The character sequence after double dot : will be rendered as the classname of the div content. all proceeding content will be associated with that div up to start of the next div `div:class` or end of panel `panel:end` comments.
 
 <!-- div:right-panel -->
 
-   ```markdown
-   <!--panels:start-->
-   <!--div:title-panel-->
+```markdown
+<!--panels:start-->
+<!--div:title-panel-->
 
-      Awesome title
+  (...) - Awesome title
 
-   <!--div:left-panel-->
+<!--div:left-panel-->
 
-      Awesome explanation
+  (...) - Awesome explanation
 
-   <!--div:right-panel-->
+<!--div:right-panel-->
 
-      Awesome example
 
-   <!--panels:end-->
-   ```
+  (...) - Awesome example
+
+<!--panels:end-->
+```
 
 <!-- div:left-panel -->
 
-3. **You can add a custom class aswell.**
+3. You can add a custom class aswell.
 
   perphaps you want something like a "floating-cat" class
 
 <!-- div:right-panel -->
 
-   ```markdown
-   <!--panels:start-->
-   <!--div:your-custom-class-->
+```markdown
+<!--panels:start-->
+<!--div:your-custom-class-->
 
-    ...
+...
 
-   <!--panels:end-->
-   ```
+<!--panels:end-->
+```
 
 <!-- div:title-panel -->
 
@@ -216,7 +198,6 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 They allow you to customize panels styles without rewriting any CSS rule.
 
 <!-- div:right-panel -->
-
 
 ```css
 :root{
@@ -273,16 +254,14 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 
 <!-- div:floating-cat -->
 
-
 <img src="assets/imgs/floating-cat.png">
-
 
 <!-- div:title-panel -->
 <hr>
 
 <!-- div:left-panel -->
 
-1 - Add this to your markdown:
+1.  Add this to your markdown:
 
 <!-- div:right-panel -->
 
@@ -297,69 +276,68 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 
 <!-- div:left-panel -->
 
-2 - It will be rendered like this:
+2.  will be rendered like this:
 
 <!-- div:right-panel -->
 
-  ```html
-  <div class="docsify-example-panels">
-      <div class="docsify-example-panels floating-cat">
-          <img src="path/to/floating-cat.png">
-      </div>
-  </div>
-  ```
+```html
+<div class="docsify-example-panels">
+    <div class="docsify-example-panels floating-cat">
+        <img src="path/to/floating-cat.png">
+    </div>
+</div>
+```
 
 <!-- div:left-panel -->
 
-3 - Then you can play with css animations:
+3.  Then you can play with css animations:
 
 <!-- div:right-panel -->
 
-  ```css
-  .floating-cat{
-    position:absolute;
-    right:  0px;
-    width: 200px;
-    height: 360px;
-    z-index: 1000;
+```css
+.floating-cat{
+  position:absolute;
+  right:  0px;
+  width: 200px;
+  height: 360px;
+  z-index: 1000;
 
-    -webkit-filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
-    filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
+  -webkit-filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
+  filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
 
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+      -webkit-filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
+      filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
+      transform: translatey(0px);
   }
-  @keyframes float {
-    0% {
-        -webkit-filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
-        filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
-        transform: translatey(0px);
-    }
-    50% {
-        box-shadow: drop-shadow(0px 25px 10px rgba(0,0,0,0.4));
-        filter: drop-shadow(0px 25px 10px rgba(0,0,0,0.2));
-        transform: translatey(-20px);
-    }
-    100% {
-        box-shadow: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
-        filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
-        transform: translatey(0px);
-    }
+  50% {
+      box-shadow: drop-shadow(0px 25px 10px rgba(0,0,0,0.4));
+      filter: drop-shadow(0px 25px 10px rgba(0,0,0,0.2));
+      transform: translatey(-20px);
   }
-  ```
+  100% {
+      box-shadow: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
+      filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
+      transform: translatey(0px);
+  }
+}
+```
 <!-- panels:end -->
-
 
 ## Contact & Support
 
-* Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
-* Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
+*  Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
+*  Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
 
 ## License
 
 This project is licensed under the [MIT license](https://github.com/VagnerDomingues/docsify-example-panels/blob/master/LICENSE).
 
-Copyright (c) [Vagner Domingues Madeira](https://github.com/VagnerDomingues/)
+Plugin created by [Vagner Domingues Madeira](https://github.com/VagnerDomingues/)
 
 <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
