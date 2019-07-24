@@ -4,4 +4,4 @@
 
 *2019-07-24*
 
-- Initial release
+-  Initial Release

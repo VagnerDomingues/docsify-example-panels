@@ -6,20 +6,17 @@
     --docsify-example-panels-wrapper-width: 100%;
 
     /* Standards */
-    --docsify-example-panels-padding-inner : 8px 16px;
-    --docsify-example-panels-padding-surroundings : 0px;
+    --docsify-example-panels-padding-inner: 8px 16px;
+    --docsify-example-panels-padding-surroundings: 0px;
 
     /* Panel Left */
     --docsify-example-panels-left-panel-background : transparent;
-    --docsify-example-panels-left-panel-width : 60%;
+    --docsify-example-panels-left-panel-width: 60%;
 
     /* Panel Right */
-    --docsify-example-panels-right-panel-background : transparent;
-    --docsify-example-panels-right-panel-width : 40%;
+    --docsify-example-panels-right-panel-background: transparent;
+    --docsify-example-panels-right-panel-width: 40%;
 
     /* Titles */
     --docsify-example-panels-title-background: transparent;
-
-    /* Responsivity */
-    --docsify-example-panels-break: 1300;
 }
