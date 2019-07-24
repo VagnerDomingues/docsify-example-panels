@@ -1,16 +1,16 @@
 {
-  "name": "docsify-tabs",
-  "version": "1.1.2",
-  "description": "A docsify.js plugin for rendering tabbed content from markdown",
-  "author": "John Hildenbiddle",
+  "name": "docsify-example-panels",
+  "version": "1.0.0",
+  "description": "A docsify.js plugin for rendering a slate alike right example panel straight from markdown",
+  "author": "Vagner Domingues Madeira",
   "license": "MIT",
-  "homepage": "https://jhildenbiddle.github.io/docsify-tabs/",
+  "homepage": "https://vagnerdomingues.github.io/docsify-example-panels/",
   "repository": {
     "type": "git",
-    "url": "git+https://jhildenbiddle@github.com/jhildenbiddle/docsify-tabs.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/jhildenbiddle/docsify-tabs/issues"
+    "url": "https://github.com/vagnerdomingues/docsify-example-panels/issues"
   },
   "keywords": [
     "docs",
@@ -23,8 +23,19 @@
     "markdown",
     "md",
     "plugin",
-    "tab",
-    "tabs"
+    "example code",
+    "code sample",
+    "codeblocks",
+    "codeblock",
+    "code block",
+    "slate",
+    "example",
+    "panel",
+    "panels",
+    "div",
+    "divs",
+    "customize",
+    "customization"
   ],
   "browserslist": [
     "ie >= 10"
@@ -32,8 +43,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/docsify-tabs.js",
-  "unpkg": "dist/docsify-tabs.min.js",
+  "main": "dist/docsify-example-panels.js",
+  "unpkg": "dist/docsify-example-panels.min.js",
   "scripts": {
     "prepare": "run-s clean build",
     "build": "rollup -c",

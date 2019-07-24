@@ -1,572 +1,365 @@
-# docsify-tabs
+# docsify-example-panels
 
-[![NPM](https://img.shields.io/npm/v/docsify-tabs.svg?style=flat-square)](https://www.npmjs.com/package/docsify-tabs)
-[![Codacy grade](https://img.shields.io/codacy/grade/88939149488a4ab69e0b63f256d2c22f.svg?style=flat-square)](https://www.codacy.com/app/jhildenbiddle/docsify-tabs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jhildenbiddle/docsify-tabs&amp;utm_campaign=Badge_Grade)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/docsify-tabs/blob/master/LICENSE)
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fdocsify-tabs&hashtags=docsify,developers,frontend,plugin)
-<a class="github-button" href="https://github.com/jhildenbiddle/docsify-tabs" data-icon="octicon-star" data-show-count="true" aria-label="Star jhildenbiddle/docsify-tabs on GitHub">Star</a>
+[![NPM](https://img.shields.io/npm/v/docsify-example-panels.svg?style=flat-square)](https://www.npmjs.com/package/docsify-example-panels)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/VagnerDomingues/docsify-example-panels/blob/master/LICENSE)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation)
+<a class="github-button" href="https://github.com/VagnerDomingues/docsify-example-panels" data-icon="octicon-star" data-show-count="true" aria-label="Star VagnerDomingues/docsify-example-panels on GitHub">Star</a>
 
-A [docsify.js](https://docsify.js.org) plugin for rendering tabbed content from markdown.
+A [docsify.js](https://docsify.js.org) plugin for rendering example panels content from markdown.
+
+## First things first
+
+Before you go any further reading, if you are @ the moment in github.com, you won't be able to see any changes.
+
+To see the plugin in action make sure you're on this url:
+
+https://www.github.com/todo
+
+
+
+<!-- panels:start -->
+
+<!-- div:title-panel -->
 
 ## Demo
 
-A basic tab set using the default [options](#options).
 
-<!-- tabs:start -->
+<!-- div:left-panel -->
 
-#### **Tab A**
+Docsify.js is outstanding! but in its nature it uses markdown files and they're just too harsh to customize. so this plugin has the intention of enabling docsify.js to have a bit better customizing experience. checkout the right side of this documentation for a demonstration.
 
-This is some text.
+<!-- div:right-panel -->
 
-* List item A-1
-* List item A-2
+This right panel is already a demo. but you can see more in:
 
-```js
-// JavaScript
-function add(a, b) {
-  return a + b;
-}
-```
+* [Fairlay API] (https://fairlay.com/api)
 
-#### **Tab B**
+<small>please contact me if you used docsify-example-panels. i would like to display it here too.</small>
 
-This is some more text.
-
-* List item B-1
-* List item B-2
-
-```css
-/* CSS */
-body {
-  background: white;
-  color: #222;
-}
-```
-
-#### **Tab C**
-
-This is some more text.
-
-* List item C-1
-* List item C-2
-
-```html
-<!-- HTML -->
-<h1>Heading</h1>
-<p>This is a paragraph.</p>
-```
-
-<!-- tabs:end -->
-
-?> Like docsify-tabs? Be sure to check out [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable) for your site theme!
+<!-- div:title-panel -->
 
 ## Features
 
-* Generate tabbed content using unobtrusive markup
-* Persist tab selections on refresh/revisit
-* Sync tab selection for tabs with matching labels
-* Style tabs using "classic" or "material" tab theme
-* Customize styles using CSS custom properties
-* Compatible with [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/) themes
+<!-- div:left-panel -->
+
+
+**Advantages**
+* Create div panels really fast and anywhere in your .md file.
+* Choose the classnames for your divs and stylize them.
+* Use CSS custom properties to change it's structure.
+* Prefab CSS classes for "left-panel", "right-panel", "title-panel".
+
+**Compatibility**
+* Fully compatible with other docsify plugins such as:
+  1. [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
+  1. [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
+  1. copy-code
+  1. google analytics
+  1. search
+
+
+* Fully compatible with any markdown or html features:
+
+<details>
+  <summary>code snippets </summary>
+
+  ```html
+    <body>
+      <img src="http://www.pudim.com.br/pudim.jpg">
+    </body>
+  ```
+</details>
+
+<details>
+  <summary>quotes</summary>
+
+> just a quote
+
+?> a cooler quote...  <small> (at least i think it is)</small>
+</details>
+
+<details>
+  <summary>images <small>(memorable)</small></summary>
+
+  <br/>
+  <img src="https://avatars0.githubusercontent.com/u/5666881?s=400&u=d94729bdf16611396a720b338c115ec0be656ba6&v=4" width="64" height="64">
+</details>
+
 
 **Limitations**
 
-* Nested tabsets (i.e. tabs within tabs) are not supported.
-* Tabs wraps when their combined width exceeds the content area width.
+* *Nesting* (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
+
+
+<!-- div:right-panel -->
+
+For multi-language documentation you can use it along with [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/):
+
+<!-- tabs:start -->
+  #### **HTML**
+  A title-panel and a paragraph in html.
+  ```html
+  <!-- HTML -->
+  <h1>Heading</h1>
+  <p>This is a paragraph.</p>
+  ```
+
+  #### **JS**
+  JavaScript function to sum two numbers
+  ```js
+  // JavaScript
+  function add(a, b) {
+    return Number(a + b);
+  }
+  ```
+
+  #### **CSS**
+  Stylesheet rule to paint white the body element
+  ```css
+  /* CSS */
+  body {
+    background: white;
+  }
+  ```
+<!-- tabs:end -->
+
+<!-- div:title-panel -->
 
 ## Installation
 
-1. Add the docsify-tabs plugin to your `index.html` after docsify.
+<!-- div:left-panel -->
+
+Just add the docsify-example-panels plugin to your `HTML` after docsify and you'll be ready to go.
+
+<!-- div:right-panel -->
 
    ```html
    <!-- docsify (latest v4.x.x)-->
    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 
-   <!-- docsify-tabs (latest v1.x.x) -->
-   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+   <!-- docsify-example-panels (latest v1.x.x) -->
+   <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels@1"></script>
    ```
 
-1. Review the [Options](#options) section and configure as needed.
-
-   ```javascript
-   window.$docsify = {
-     // ...
-     tabs: {
-       persist    : true,      // default
-       sync       : true,      // default
-       theme      : 'classic', // default
-       tabComments: true,      // default
-       tabHeadings: true       // default
-     }
-   };
-   ```
-
-1. Review the [Customization](#customization) section and set theme properties as needed.
-
-   ```html
-   <style>
-     :root {
-       --docsifytabs-border-color: #ededed;
-       --docsifytabs-tab-highlight-color: purple;
-     }
-   </style>
-   ```
+<!-- div:title-panel -->
 
 ## Usage
 
-1. Define a tab set using `tabs:start` and `tabs:end` HTML comments.
+<!-- div:left-panel -->
 
-   HTML comments are used to mark the start and end of a tab set. The use of HTML comments prevents tab-related markup from being displayed when markdown is rendered as HTML outside of your docsify site (e.g. Github, GitLab, etc).
+1. **Define a panel in markdown file using `panel:start` and `panel:end` HTML comments.**
 
-   ```markdown
-   <!-- tabs:start -->
+  HTML comments are used to mark the start and end of a panel. The use of HTML comments prevents any markup from being displayed when markdown is rendered as HTML outside of your docsify site (e.g. Github, GitLab, etc).
 
-   ...
+<!-- div:right-panel -->
 
-   <!-- tabs:end -->
-   ```
-
-1. Define tabs within a tab set using heading + bold markdown.
-
-   Heading text will be used as the tab label, and all proceeding content will be associated with that tab up to start of the next tab or a `tab:end` comment. The use of heading + bold markdown allows tabs to be defined using standard markdown and ensures that tab content is displayed with a heading when rendered outside of your docsify site (e.g. GitHub, GitLab, etc).
-
-   ```markdown
-   <!-- tabs:start -->
-
-   #### ** English **
-
-   Hello!
-
-   #### ** French **
-
-   Bonjour!
-
-   #### ** Italian **
-
-   Ciao!
-
-   <!-- tabs:end -->
-   ```
-
-   See [`options.tabHeadings`](#tabheadings) for details or [`options.tabComments`](#tabcomments) for an alternate method of defining tabs within tab sets.
-
-1. Voilà! A tab set is formed.
-
-   <!-- tabs:start -->
-
-   #### **English**
-
-   Hello!
-
-   #### **French**
-
-   Bonjour!
-
-   #### **Italian**
-
-   Ciao!
-
-   <!-- tabs:end -->
-
-## Options
-
-Options are set within the [`window.$docsify`](https://docsify.js.org/#/configuration) configuration under the `tabs` key:
-
-```html
-<script>
-  window.$docsify = {
-    // ...
-    tabs: {
-      persist    : true,      // default
-      sync       : true,      // default
-      theme      : 'classic', // default
-      tabComments: true,      // default
-      tabHeadings: true       // default
-    }
-  };
-</script>
-```
-
-### persist
-
-* Type: `boolean`
-* Default: `true`
-
-Determines if tab selections will be restored after a page refresh/revisit.
-
-**Configuration**
-
-```javascript
-window.$docsify = {
-  // ...
-  tabs: {
-    persist: true // default
-  }
-};
-```
-
-### sync
-
-* Type: `boolean`
-* Default: `true`
-
-Determines if tab selections will be synced across tabs with matching labels.
-
-**Configuration**
-
-```javascript
-window.$docsify = {
-  // ...
-  tabs: {
-    sync: true // default
-  }
-};
-```
-
-**Demo**
-
-<!-- tabs:start -->
-
-#### **macOS**
-
-Instructions for macOS...
-
-#### **Windows**
-
-Instructions for Windows...
-
-#### **Linux**
-
-Instructions for Linux...
-
-<!-- tabs:end -->
-
-<!-- tabs:start -->
-
-#### **macOS**
-
-More instructions for macOS...
-
-#### **Windows**
-
-More instructions for Windows...
-
-#### **Linux**
-
-More instructions for Linux...
-
-<!-- tabs:end -->
-
-### theme
-
-* Type: `string|boolean`
-* Accepts: `'classic'`, `'material'`, `false`
-* Default: `'classic'`
-
-Sets the tab theme. A value of `false` will indicate that no theme should be applied, which should be used when creating custom tab themes.
-
-**Configuration**
-
-```javascript
-window.$docsify = {
-  // ...
-  tabs: {
-    theme: 'classic' // default
-  }
-};
-```
-
-**Demo**
-
-<label data-class-target="label + .docsify-tabs" data-class-remove="docsify-tabs--material" data-class-add="docsify-tabs--classic">
-  <input name="theme" type="radio" value="classic" checked="checked"> Classic
-</label>
-<label data-class-target="label + .docsify-tabs" data-class-remove="docsify-tabs--classic" data-class-add="docsify-tabs--material">
-  <input name="theme" type="radio" value="material"> Material
-</label>
-<label data-class-target="label + .docsify-tabs" data-class-remove="docsify-tabs--classic docsify-tabs--material">
-  <input name="theme" type="radio" value="none"> No Theme
-</label>
-
-<!-- tabs:start -->
-
-#### **Tab A**
-
-This is some text.
-
-#### **Tab B**
-
-This is some more text.
-
-#### **Tab C**
-
-Yes, this is even more text.
-
-<!-- tabs:end -->
-
-### tabComments
-
-* Type: `boolean`
-* Default: `true`
-
-Determines if tabs within a tab set can be defined using tab comments.
-
-Note that defining tabs using HTML comments means tab content will not be labeled when rendered outside of your docsify site (e.g. GitHub, GitLab, etc). For this reason, defining tabs using [`options.tabHeadings`](#tabheadings) is recommended.
-
-**Configuration**
-
-```javascript
-window.$docsify = {
-  // ...
-  tabs: {
-    tabComments: true // default
-  }
-};
-```
-
-**Example**
+<p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag, beware when ctrl + c & v</p>
 
 ```markdown
-<!-- tabs:start -->
+   <!--panels:start-->
 
-<!-- tab:English -->
+   (...)
 
-Hello!
-
-<!-- tab:French -->
-
-Bonjour!
-
-<!-- tab:Italian -->
-
-Ciao!
-
-<!-- tabs:end -->
+   <!--panels:end-->
 ```
 
-### tabHeadings
+<!-- div:left-panel -->
 
-* Type: `boolean`
-* Default: `true`
+2. **Define divs within a panel in markdown file using HTML comments.**
 
-Determines if tabs within a tab set can be defined using heading + bold markdown.
+  The character sequence after double dot : will be rendered as the classname of the div content. all proceeding content will be associated with that div up to start of the next div `div:class` or end of panel `panel:end` comments.
 
-The use of heading + bold markdown allows tabs to be defined using standard markdown and ensures that tab content is displayed with a heading when rendered outside of your docsify site (e.g. GitHub, GitLab, etc). Heading levels 1-6 are supported (e.g. `#` - `######`) as are both asteriscks (`**`) and underscores (`__`) for bold text via markdown.
+<!-- div:right-panel -->
 
-**Configuration**
+   ```markdown
+   <!--panels:start-->
+   <!--div:title-panel-->
 
-```javascript
-window.$docsify = {
-  // ...
-  tabs: {
-    tabHeadings: true // default
-  }
-};
-```
+      Awesome title
 
-**Example**
+   <!--div:left-panel-->
 
-```markdown
-<!-- tabs:start -->
+      Awesome explanation
 
-#### ** English **
+   <!--div:right-panel-->
 
-Hello!
+      Awesome example
 
-#### ** French **
+   <!--panels:end-->
+   ```
 
-Bonjour!
+<!-- div:left-panel -->
 
-#### ** Italian **
+3. **You can add a custom class aswell.**
 
-Ciao!
+  perphaps you want something like a "floating-cat" class
 
-<!-- tabs:end -->
-```
+<!-- div:right-panel -->
+
+   ```markdown
+   <!--panels:start-->
+   <!--div:your-custom-class-->
+
+    ...
+
+   <!--panels:end-->
+   ```
+
+<!-- div:title-panel -->
 
 ## Customization
 
-### Themes
+<!-- div:left-panel -->
 
-See [`options.theme`](#theme) for details on available themes.
+### Properties
 
-### Theme Properties
+They allow you to customize panels styles without rewriting any CSS rule.
 
-Theme properties allow you to customize tab styles without writing complex CSS. The following list contains the default theme values.
+<!-- div:right-panel -->
 
-[vars.css](https://raw.githubusercontent.com/jhildenbiddle/docsify-tabs/master/src/css/vars.css ':include :type:code')
 
-To set theme properties, add a `<style>` element to your `index.html` file after all other stylesheets and set properties within a `:root` selector.
+```css
+:root{
+    /* Document */
+    --docsify-example-panels-document-width: 90%;
 
+    /* Wrapper */
+    --docsify-example-panels-wrapper-width: 100%;
+
+    /* Standards */
+    --docsify-example-panels-padding-inner : 8px 16px;
+    --docsify-example-panels-padding-surroundings : 0px;
+
+    /* Panel Left */
+    --docsify-example-panels-left-panel-background : transparent;
+    --docsify-example-panels-left-panel-width : 60%;
+
+    /* Panel Right */
+    --docsify-example-panels-right-panel-background : transparent;
+    --docsify-example-panels-right-panel-width : 40%;
+
+    /* Titles */
+    --docsify-example-panels-title-background: transparent;
+}
+```
+
+<!-- div:left-panel -->
+
+### Custom Properties
+
+You can change properties by adding a `<style>` tag or `<link>` reference to your `index.html` file after all other stylesheets, just remember to set the properties within a `:root` selector.
+
+<!-- div:right-panel -->
 ```html
 <style>
   :root {
-    --docsifytabs-border-color: #ededed;
-    --docsifytabs-tab-highlight-color: purple;
+    --docsify-example-panels-document-width: 100%; /* Remove margins */
+    --docsify-example-panels-left-panel-width : 70%; /* bit more for left */
+    --docsify-example-panels-right-panel-width : 30%; /* bit less for right */
   }
 </style>
 ```
 
+<!-- div:left-panel -->
+
 ### Custom Styles
+Custom styles can be created using the classname you choosed in markdown
 
-Custom tab styles can be created using docsify-tabs CSS classes and `data-tab` attributes.
+The main purpose of this plugin is to ease and rush the production of any markdown written documentation using the right panel as code examples.
 
-Use the `docsify-tabs` CSS classes to apply common tab styles to tab blocks, toggles, and content containers. Use `data-tab` attributes to apply styles to specific tabs and/or content based on the tab label.
+But let's suppose you indeed wants to add a floating cat in your documentation, like i did.
 
-```html
-<div class="docsify-tabs docsify-tabs--classic">
-  /* Tab A */
-  <button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="tab a">Tab A</button>
-  <div class="docsify-tabs__content" data-tab-content="tab a">
-    ...
+<small> In case you insisted to read this in github url the cat image won't be so floating.</small>
+
+<!-- div:floating-cat -->
+
+
+<img src="assets/imgs/floating-cat.png">
+
+
+<!-- div:title-panel -->
+<hr>
+
+<!-- div:left-panel -->
+
+1 - Add this to your markdown:
+
+<!-- div:right-panel -->
+
+```markdown
+  <!--panels:start-->
+  <!--div:floating-cat-->
+
+  <img src="path/to/floating-cat.png">
+
+  <!--panels:end-->
+```
+
+<!-- div:left-panel -->
+
+2 - It will be rendered like this:
+
+<!-- div:right-panel -->
+
+  ```html
+  <div class="docsify-example-panels">
+      <div class="docsify-example-panels floating-cat">
+          <img src="path/to/floating-cat.png">
+      </div>
   </div>
+  ```
 
-  /* Tab B */
-  <button class="docsify-tabs__tab" data-tab="tab b">Tab B</button>
-  <div class="docsify-tabs__content" data-tab-content="tab b">
-    ...
-  </div>
-</div>
-```
+<!-- div:left-panel -->
 
-**Examples**
+3 - Then you can play with css animations:
 
-<!-- tabs:start -->
+<!-- div:right-panel -->
 
-#### **Icon Only**
+  ```css
+  .floating-cat{
+    position:absolute;
+    right:  0px;
+    width: 200px;
+    height: 360px;
+    z-index: 1000;
 
-**Tab Markdown**
+    -webkit-filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
+    filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
 
-```markdown
-#### **Icon Only**
-```
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+        -webkit-filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
+        filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: drop-shadow(0px 25px 10px rgba(0,0,0,0.4));
+        filter: drop-shadow(0px 25px 10px rgba(0,0,0,0.2));
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
+        filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
+        transform: translatey(0px);
+    }
+  }
+  ```
+<!-- panels:end -->
 
-**Custom CSS**
-
-```css
-.docsify-tabs__tab[data-tab="icon only"] {
-  letter-spacing: -100vw;
-  color: transparent;
-}
-.docsify-tabs__tab[data-tab="icon only"]:before {
-  content: url(path/to/image.png);
-  vertical-align: middle;
-}
-```
-
-#### **Icon + Label**
-
-**Tab Markdown**
-
-```markdown
-#### **Icon + Label**
-```
-
-**Custom CSS**
-
-```css
-[data-tab="icon + label"]:before {
-  content: url(path/to/image.png);
-  height: 16px;
-  margin-right: 0.5em;
-  vertical-align: middle;
-}
-```
-
-#### **Active State**
-
-**Tab Markdown**
-
-```markdown
-#### **Active State**
-```
-
-**Custom CSS**
-
-```css
-.docsify-tabs__tab--active[data-tab="active state"] {
-  box-shadow: none;
-  background: #13547a;
-  color: white;
-}
-.docsify-tabs__content[data-tab-content="active state"] {
-  background-image: linear-gradient(0deg, #80d0c7 0%, #13547a 100%);
-}
-.docsify-tabs__content[data-tab-content="active state"] p strong {
-  color: white;
-}
-```
-
-#### **JSBin**
-
-<a class="jsbin-embed" href="https://jsbin.com/iwovaj/74/embed?js,output&height=350px">Demo: Simple Animation Tests</a>
-<script src="https://static.jsbin.com/js/embed.js"></script>
-
-**Tab Markdown**
-
-```markdown
-#### **JSBin**
-```
-
-**Custom CSS**
-
-```css
-[data-tab-content="jsbin"] {
-  padding: 0 !important;
-}
-[data-tab-content="jsbin"] * {
-  margin: 0 !important;
-}
-[data-tab-content="jsbin"] iframe {
-  display: block;
-  min-height: 350px;
-  border: 0 !important;
-}
-```
-
-#### **Badge**
-
-**Tab Markdown**
-
-```markdown
-#### **Badge**
-```
-
-**Custom CSS**
-
-```css
-[data-tab="badge"]:after {
-  content: 'New!';
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-height: 1em;
-  min-width: 1em;
-  padding: 0.325em 0.5em 0.3em 0.5em;
-  border-radius: 3px;
-  background: red;
-  color: #fff;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 1;
-  transform: translate(35%, -45%);
-}
-```
-
-<!-- tabs:end -->
 
 ## Contact & Support
 
-* Create a [GitHub issue](https://github.com/jhildenbiddle/docsify-tabs/issues) for bug reports, feature requests, or questions
-* Follow [@jhildenbiddle](https://twitter.com/jhildenbiddle) for announcements
-* Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/docsify-tabs) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fdocsify-tabs&hashtags=css,developers,frontend,javascript) to support the project!
+* Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
+* Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-panels&hashtags=docsify,developers,frontend,plugin) to support the project!
 
 ## License
 
-This project is licensed under the [MIT license](https://github.com/jhildenbiddle/docsify-tabs/blob/master/LICENSE).
+This project is licensed under the [MIT license](https://github.com/VagnerDomingues/docsify-example-panels/blob/master/LICENSE).
 
-Copyright (c) John Hildenbiddle ([@jhildenbiddle](https://twitter.com/jhildenbiddle))
+Copyright (c) [Vagner Domingues Madeira](https://github.com/VagnerDomingues/)
 
 <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>

@@ -5,17 +5,59 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="description" content="docsify-tabs - A docsify.js plugin for rendering tabbed content from markdown.">
+    <meta name="description" content="docsify-example-panels - A docsify.js plugin for rendering tabbed content from markdown.">
     <meta name="google-site-verification" content="_EWJaM8G6xwMtEqemO4yN8WqSU2CaKVi3jTj0gLg48E">
-    <title>docsify-tabs - A docsify.js plugin for rendering tabbed content from markdown</title>
+    <title>docsify-example-panels - A docsify.js plugin for rendering a slate alike right example panel straight from markdown</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="Simple">
-    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Test Stylesheets -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/buble.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/dark.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/pure.css"> -->
+
+    <style>
+        :root{
+            --docsify-example-panels-left-panel-width : 55%;
+            --docsify-example-panels-right-panel-width : 45%;
+        }
+        .floating-cat{
+            position:absolute;
+            right:  0px;
+            width: 200px;
+            height: 360px;
+            z-index: 1000;
+
+            -webkit-filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
+            filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.6));
+
+            transform: translatey(0px);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-cat img{
+            position:fixed;
+        }
+        @keyframes float {
+            0% {
+                -webkit-filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
+                filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
+                transform: translatey(0px);
+            }
+            50% {
+                box-shadow: drop-shadow(0px 25px 10px rgba(0,0,0,0.4));
+                filter: drop-shadow(0px 25px 10px rgba(0,0,0,0.2));
+                transform: translatey(-20px);
+            }
+            100% {
+                box-shadow: drop-shadow(0px 5px 5px rgba(0,0,0,0.8));
+                filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.6));
+                transform: translatey(0px);
+            }
+        }
+
+        .text-danger{color:red;}
+    </style>
 </head>
 
 <body>
@@ -31,15 +73,15 @@
         window.$docsify = {
             // GENERAL
             // -----------------------------------------------------------------
-            name       : 'docsify-tabs',
-            repo       : 'https://github.com/jhildenbiddle/docsify-tabs',
+            name       : 'docsify-example-panels',
+            repo       : 'https://github.com/VagnerDomingues/docsify-example-panels',
             homepage   : 'index.md',
             loadSidebar: 'sidebar.md',
 
             // NAVIGATION
             // -----------------------------------------------------------------
             alias: {
-                '.*?/changelog': 'https://cdn.jsdelivr.net/npm/docsify-tabs@1/CHANGELOG.md',
+                '.*?/changelog': 'https://cdn.jsdelivr.net/npm/docsify-example-panels@1/CHANGELOG.md',
             },
             auto2top   : true,
             maxLevel   : 3,
@@ -53,13 +95,6 @@
                 depth      : 3,
                 noData     : 'No results!',
                 placeholder: 'Search...'
-            },
-            tabs: {
-                // persist    : false,
-                // sync       : false,
-                // theme      : 'material',
-                // tabComments: false,
-                // tabHeadings: false
             }
         };
     </script>
@@ -71,9 +106,7 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/class-change@1"></script>
-    <script>
-        // Initialize the default attribute listener
-        classChange.attrs();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels@1"></script>
+
 </body>
 </html>

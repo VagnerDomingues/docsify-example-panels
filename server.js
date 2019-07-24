@@ -32,12 +32,12 @@ browserSync.init({
     rewriteRules: [
         // Replace CDN URLs with local paths
         {
-            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-tabs@1\/dist\//g,
+            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-example-panels@1\/dist\//g,
             replace: '/'
         },
         {
-            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-tabs@1/g,
-            replace: '/docsify-tabs.min.js'
+            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-example-panels@1/g,
+            replace: '/docsify-example-panels.min.js'
         }
     ]
 });

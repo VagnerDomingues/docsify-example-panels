@@ -1,20 +1,25 @@
 :root {
-    /* Tab blocks */
-    --docsifytabs-border-color          : #ededed;
-    --docsifytabs-border-px             : 1px;
-    --docsifytabs-border-radius-px      : ;
-    --docsifytabs-margin                : 1.5em 0;
+    /* Document */
+    --docsify-example-panels-document-width: 90%;
 
-    /* Tabs */
-    --docsifytabs-tab-background        : #f8f8f8;
-    --docsifytabs-tab-background--active: var(--docsifytabs-content-background);
-    --docsifytabs-tab-color             : #999;
-    --docsifytabs-tab-color--active     : inherit;
-    --docsifytabs-tab-highlight-px      : 3px;
-    --docsifytabs-tab-highlight-color   : var(--theme-color, currentColor);
-    --docsifytabs-tab-padding           : 0.6em 1em;
+    /* Wrapper */
+    --docsify-example-panels-wrapper-width: 100%;
 
-    /* Tab content */
-    --docsifytabs-content-background    : inherit;
-    --docsifytabs-content-padding       : 0.5rem 1.75rem;
+    /* Standards */
+    --docsify-example-panels-padding-inner : 8px 16px;
+    --docsify-example-panels-padding-surroundings : 0px;
+
+    /* Panel Left */
+    --docsify-example-panels-left-panel-background : transparent;
+    --docsify-example-panels-left-panel-width : 60%;
+
+    /* Panel Right */
+    --docsify-example-panels-right-panel-background : transparent;
+    --docsify-example-panels-right-panel-width : 40%;
+
+    /* Titles */
+    --docsify-example-panels-title-background: transparent;
+
+    /* Responsivity */
+    --docsify-example-panels-break: 1300;
 }
