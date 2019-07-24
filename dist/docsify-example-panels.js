@@ -2,7 +2,7 @@
  * docsify-example-panels
  * v1.0.0
  * https://vagnerdomingues.github.io/docsify-example-panels/
- * (c) 2018-2019 Vagner Domingues Madeira
+ * (c) 2019 Vagner Domingues Madeira
  * MIT license
  */
 (function() {

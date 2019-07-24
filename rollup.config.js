@@ -17,7 +17,7 @@ import { uglify }   from 'rollup-plugin-uglify';
 // =============================================================================
 // Copyright
 const currentYear  = (new Date()).getFullYear();
-const releaseYear  = 2018;
+const releaseYear  = 2019;
 
 // Output
 const entryFile  = path.resolve(__dirname, 'src', 'js', 'index.js');

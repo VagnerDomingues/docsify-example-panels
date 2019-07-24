@@ -353,7 +353,7 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 ## Contact & Support
 
 * Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
-* Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-panels&hashtags=docsify,developers,frontend,plugin) to support the project!
+* Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
 
 ## License
 
