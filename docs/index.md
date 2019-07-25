@@ -71,13 +71,13 @@ This panel is a demo. but you can see more in:
 
 -   Fully compatible with major docsify plugins such as:
 
->  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
+> [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
 >
->  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
+> [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
 >
->  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
+> [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
 >
->  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
+> [docsify-pagination](https://github.com/imyelo/docsify-pagination)
 
 **Limitations**
 
