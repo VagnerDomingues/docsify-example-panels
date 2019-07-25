@@ -21,7 +21,7 @@ If you are on widescreen, checkout the right side panels.
 
 This panel is a demo. but you can see more in:
 
-*  [Fairlay API](https://fairlay.com/api)
+-   [Fairlay API](https://fairlay.com/api)
 
 <small>please contact me if you use docsify-example-panels. i would like to display it here too.</small>
 
@@ -33,30 +33,24 @@ This panel is a demo. but you can see more in:
 
 **Advantages**
 
-*  Create div panels really fast and anywhere in your .md file.
-*  Choose the classnames for your divs and stylize them.
-*  Use CSS custom properties to change it's structure.
-*  Prefab CSS classes for "left-panel", "right-panel" and "title-panel".
+-   Create div panels really fast and anywhere in your .md file.
+-   Choose the classnames for your divs and stylize them.
+-   Use CSS custom properties to change it's structure.
+-   Prefab CSS classes for "left-panel", "right-panel" and "title-panel".
 
 **Compatibility**
 
-*  Fully compatible with major docsify plugins such as:
-
-  *  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
-  *  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
-  *  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
-  *  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
-
-*  Fully compatible with any markdown or html features:
+-   Fully compatible with any markdown or html features:
 
 <details>
   <summary>code snippets </summary>
 
-  ```html
-    <body>
-      <img src="http://www.pudim.com.br/pudim.jpg">
-    </body>
-  ```
+```html
+  <body>
+    <img src="http://www.pudim.com.br/pudim.jpg">
+  </body>
+```
+
 </details>
 
 <details>
@@ -65,6 +59,7 @@ This panel is a demo. but you can see more in:
 > just a quote
 
 ?> a cooler quote...  <small> (at least i think it is)</small>
+
 </details>
 
 <details>
@@ -74,16 +69,28 @@ This panel is a demo. but you can see more in:
   <img src="https://avatars0.githubusercontent.com/u/5666881?s=400&u=d94729bdf16611396a720b338c115ec0be656ba6&v=4" width="64" height="64">
 </details>
 
+-   Fully compatible with major docsify plugins such as:
+
+>  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
+>
+>  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
+>
+>  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
+>
+>  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
+
 **Limitations**
 
-*  *Nesting* (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
+-   _Nesting_ (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
 
 <!-- div:right-panel -->
 
 For multi-language documentation you can use it along with [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/):
 
 <!-- tabs:start -->
+
 ### **HTML**
+
 ```html
 <!-- HTML -->
 <h1>Heading</h1>
@@ -91,6 +98,7 @@ For multi-language documentation you can use it along with [docsify-tabs](https:
 ```
 
 ### **JS**
+
 ```js
 // JavaScript
 function add(a, b) {
@@ -99,12 +107,14 @@ function add(a, b) {
 ```
 
 ### **CSS**
+
 ```css
 /* CSS */
 body {
   background: white;
 }
 ```
+
 <!-- tabs:end -->
 
 <!-- div:title-panel -->
@@ -133,7 +143,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 1.  Define a panel in markdown file using `panel:start` and `panel:end` HTML comments.
 
-  HTML comments are used to mark the start and end of a panel. The use of HTML comments prevents any markup from being displayed when markdown is rendered as HTML outside of your docsify site (e.g. Github, GitLab, etc).
+    HTML comments are used to mark the start and end of a panel. The use of HTML comments prevents any markup from being displayed when markdown is rendered as HTML outside of your docsify site (e.g. Github, GitLab, etc).
 
 <!-- div:right-panel -->
 
@@ -151,7 +161,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 2.  Define divs within a panel in markdown file using HTML comments.
 
-  The character sequence after double dot : will be rendered as the classname of the div content. all proceeding content will be associated with that div up to start of the next div `div:class` or end of panel `panel:end` comments.
+    The character sequence after double dot : will be rendered as the classname of the div content. all proceeding content will be associated with that div up to start of the next div `div:class` or end of panel `panel:end` comments.
 
 <!-- div:right-panel -->
 
@@ -177,7 +187,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 3.  You can add a custom class aswell.
 
-  perphaps you want something like a "floating-cat" class
+    perphaps you want something like a "floating-cat" class
 
 <!-- div:right-panel -->
 
@@ -234,6 +244,7 @@ They allow you to customize panels styles without rewriting any CSS rule.
 You can change properties by adding a `<style>` tag or `<link>` reference to your `index.html` file after all other stylesheets, just remember to set the properties within a `:root` selector.
 
 <!-- div:right-panel -->
+
 ```html
 <style>
   :root {
@@ -247,6 +258,7 @@ You can change properties by adding a `<style>` tag or `<link>` reference to you
 <!-- div:left-panel -->
 
 ### Custom Styles
+
 Custom styles can be created using the classname you choosed in markdown
 
 The main purpose of this plugin is to ease and rush the production of any markdown written documentation using the right panel as code examples.
@@ -260,6 +272,7 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 <img src="assets/imgs/floating-cat.png">
 
 <!-- div:title-panel -->
+
 <hr>
 
 <!-- div:left-panel -->
@@ -329,12 +342,13 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
   }
 }
 ```
+
 <!-- panels:end -->
 
 ## Contact & Support
 
-*  Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
-*  Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
+-   Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
+-   Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
 
 ## License
 
@@ -343,4 +357,5 @@ This project is licensed under the [MIT license](https://github.com/VagnerDoming
 Plugin created by [Vagner Domingues Madeira](https://github.com/VagnerDomingues/)
 
 <!-- GitHub Buttons -->
+
 <script async defer src="https://buttons.github.io/buttons.js"></script>
