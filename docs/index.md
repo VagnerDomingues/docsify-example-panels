@@ -42,10 +42,10 @@ This panel is a demo. but you can see more in:
 
 *  Fully compatible with major docsify plugins such as:
 
-  1.  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
-  2.  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
-  3.  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
-  4.  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
+  *  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
+  *  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
+  *  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
+  *  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
 
 *  Fully compatible with any markdown or html features:
 
