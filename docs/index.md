@@ -32,45 +32,47 @@ This panel is a demo. but you can see more in:
 <!-- div:left-panel -->
 
 **Advantages**
-  *  Create div panels really fast and anywhere in your .md file.
-  *  Choose the classnames for your divs and stylize them.
-  *  Use CSS custom properties to change it's structure.
-  *  Prefab CSS classes for "left-panel", "right-panel" and "title-panel".
+
+*  Create div panels really fast and anywhere in your .md file.
+*  Choose the classnames for your divs and stylize them.
+*  Use CSS custom properties to change it's structure.
+*  Prefab CSS classes for "left-panel", "right-panel" and "title-panel".
 
 **Compatibility**
-  *  Fully compatible with major docsify plugins such as:
 
-    1.  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
-    2.  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
-    3.  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
-    4.  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
+*  Fully compatible with major docsify plugins such as:
 
-  *  Fully compatible with any markdown or html features:
+  1.  [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/)
+  2.  [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
+  3.  [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
+  4.  [docsify-pagination](https://github.com/imyelo/docsify-pagination)
 
-  <details>
-    <summary>code snippets </summary>
+*  Fully compatible with any markdown or html features:
 
-    ```html
-      <body>
-        <img src="http://www.pudim.com.br/pudim.jpg">
-      </body>
-    ```
-  </details>
+<details>
+  <summary>code snippets </summary>
 
-  <details>
-    <summary>quotes</summary>
+  ```html
+    <body>
+      <img src="http://www.pudim.com.br/pudim.jpg">
+    </body>
+  ```
+</details>
 
-  > just a quote
+<details>
+  <summary>quotes</summary>
 
-  ?> a cooler quote...  <small> (at least i think it is)</small>
-  </details>
+> just a quote
 
-  <details>
-    <summary>images <small>(memorable)</small></summary>
+?> a cooler quote...  <small> (at least i think it is)</small>
+</details>
 
-    <br/>
-    <img src="https://avatars0.githubusercontent.com/u/5666881?s=400&u=d94729bdf16611396a720b338c115ec0be656ba6&v=4" width="64" height="64">
-  </details>
+<details>
+  <summary>images <small>(memorable)</small></summary>
+
+  <br/>
+  <img src="https://avatars0.githubusercontent.com/u/5666881?s=400&u=d94729bdf16611396a720b338c115ec0be656ba6&v=4" width="64" height="64">
+</details>
 
 **Limitations**
 
