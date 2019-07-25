@@ -7,7 +7,7 @@
 
 A [docsify.js](https://docsify.js.org) plugin for rendering example panels content from markdown.
 
-- [Documentation / Demos](https://github.com/VagnerDomingues/docsify-example-panels)
+- [Documentation / Demos](https://vagnerdomingues.github.io/docsify-example-panels/#/)
 
 
 ## Contact & Support
