@@ -4,7 +4,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9f47a225f5044aa491cc77ed7361a983)](https://app.codacy.com/app/VagnerDomingues/docsify-example-panels?utm_source=github.com&utm_medium=referral&utm_content=VagnerDomingues/docsify-example-panels&utm_campaign=Badge_Grade_Dashboard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/VagnerDomingues/docsify-example-panels/blob/master/LICENSE)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation)
-<a class="github-button" href="https://github.com/VagnerDomingues/docsify-example-panels" data-icon="octicon-star" data-show-count="true" aria-label="Star VagnerDomingues/docsify-example-panels on GitHub">Star</a>
 
 A [docsify.js](https://docsify.js.org) plugin for rendering example panels content from markdown.
 
