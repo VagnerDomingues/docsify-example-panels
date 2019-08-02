@@ -14,10 +14,12 @@ $--docsify-example-panels-break: 1300;
 }
 .docsify-example-panels{
     width: var(--docsify-example-panels-wrapper-width);
+}
+.docsify-example-panel, .docsify-example-panels{
     padding: 0;
     display:inline-block;
 }
-.docsify-example-panels.left-panel{
+.docsify-example-panel.left-panel{
     float:left;
     max-width: var(--docsify-example-panels-left-panel-width);
     width: var(--docsify-example-panels-left-panel-width);
@@ -31,7 +33,7 @@ $--docsify-example-panels-break: 1300;
         padding: 0!important;
     }
 }
-.docsify-example-panels.right-panel{
+.docsify-example-panel.right-panel{
     max-width: var(--docsify-example-panels-right-panel-width);
     width: var(--docsify-example-panels-right-panel-width);
     padding: var(--docsify-example-panels-padding-inner);
@@ -44,7 +46,7 @@ $--docsify-example-panels-break: 1300;
         padding: 0!important;
     }
 }
-.docsify-example-panels.title-panel{
+.docsify-example-panel.title-panel{
     padding:0;
     padding-left: var(--docsify-example-panels-padding-surroundings);
     padding-right: var(--docsify-example-panels-padding-surroundings);

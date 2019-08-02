@@ -9,7 +9,8 @@ import '../scss/style.scss';
 const commentReplaceMark = 'panels:replace';
 
 const classNames = {
-    panelBlock      : 'docsify-example-panels',
+    panelWrapper      : 'docsify-example-panels',
+    panelContainer      : 'docsify-example-panel'
 };
 const regex = {
     // Matches markdown code blocks (inline and multi-line)
@@ -26,7 +27,7 @@ const regex = {
     // 2: Start comment: <!-- panels:start -->
     // 3: divs and content
     // 4: End comment: <!-- panels:end -->
-    panelBlockMarkup: /[\r\n]*(\s*)(<!-+\s+panels:\s*?start\s+-+>)[\r\n]+([\s|\S]*?)[\r\n\s]+(<!-+\s+panels:\s*?end\s+-+>)/m,
+    panelWrapperMarkup: /[\r\n]*(\s*)(<!-+\s+panels:\s*?start\s+-+>)[\r\n]+([\s|\S]*?)[\r\n\s]+(<!-+\s+panels:\s*?end\s+-+>)/m,
 
     // Matches divs and content
     // 0: Match
@@ -59,41 +60,41 @@ function renderPanelsStage1(content) {
         return codeMarker;
     });
 
-    let panelBlockMatch; // eslint-disable-line no-unused-vars
+    let panelWrapperMatch; // eslint-disable-line no-unused-vars
     let panelMatch; // eslint-disable-line no-unused-vars
 
     // Process each tab set
-    while ((panelBlockMatch = regex.panelBlockMarkup.exec(content)) !== null) {
-        let panelBlock            = panelBlockMatch[0];
+    while ((panelWrapperMatch = regex.panelWrapperMarkup.exec(content)) !== null) {
+        let panelWrapper            = panelWrapperMatch[0];
         let panelStartReplacement = '';
         let panelEndReplacement   = '';
 
-        const hasPanel = regex.panelMarkup.test(panelBlock);
-        const panelBlockIndent = panelBlockMatch[1];
-        const panelBlockStart  = panelBlockMatch[2];
-        const panelBlockEnd    = panelBlockMatch[4];
+        const hasPanel = regex.panelMarkup.test(panelWrapper);
+        const panelWrapperIndent = panelWrapperMatch[1];
+        const panelWrapperStart  = panelWrapperMatch[2];
+        const panelWrapperEnd    = panelWrapperMatch[4];
 
         if (hasPanel) {
-            panelStartReplacement = `<!-- ${commentReplaceMark} <div class="${[classNames.panelBlock].join(' ')}"> -->`;
-            panelEndReplacement = `\n${panelBlockIndent}<!-- ${commentReplaceMark} </div> -->`;
+            panelStartReplacement = `<!-- ${commentReplaceMark} <div class="${[classNames.panelWrapper].join(' ')}"> -->`;
+            panelEndReplacement = `\n${panelWrapperIndent}<!-- ${commentReplaceMark} </div> -->`;
 
             // Process each panel
-            while ((panelMatch = (regex.panelMarkup.exec(panelBlock))) !== null) {
+            while ((panelMatch = (regex.panelMarkup.exec(panelWrapper))) !== null) {
                 const panelName   = (panelMatch[1]).trim().toLowerCase();
                 const panelContent = (panelMatch[2]).trim();
 
-                panelBlock = panelBlock.replace(panelMatch[0], [
-                    `\n${panelBlockIndent}<!-- ${commentReplaceMark} <div class="${[classNames.panelBlock, panelName].join(' ')}"> -->`,
-                    `\n\n${panelBlockIndent}${panelContent}`,
-                    `\n\n${panelBlockIndent}<!-- ${commentReplaceMark} </div> -->`
+                panelWrapper = panelWrapper.replace(panelMatch[0], [
+                    `\n${panelWrapperIndent}<!-- ${commentReplaceMark} <div class="${[classNames.panelContainer, panelName].join(' ')}"> -->`,
+                    `\n\n${panelWrapperIndent}${panelContent}`,
+                    `\n\n${panelWrapperIndent}<!-- ${commentReplaceMark} </div> -->`
                 ].join(''));
             }
 
         }
 
-        panelBlock = panelBlock.replace(panelBlockStart, panelStartReplacement);
-        panelBlock = panelBlock.replace(panelBlockEnd, panelEndReplacement);
-        content = content.replace(panelBlockMatch[0], panelBlock);
+        panelWrapper = panelWrapper.replace(panelWrapperStart, panelStartReplacement);
+        panelWrapper = panelWrapper.replace(panelWrapperEnd, panelEndReplacement);
+        content = content.replace(panelWrapperMatch[0], panelWrapper);
     }
 
 
@@ -133,7 +134,7 @@ function renderPanelsStage2(html) {
 function docsifyPanels(hook, vm) {
     let hasPanels =false;
     hook.beforeEach(function(content) {
-        hasPanels = regex.panelBlockMarkup.test(content);
+        hasPanels = regex.panelWrapperMarkup.test(content);
 
         if (hasPanels) {
             content = renderPanelsStage1(content);
