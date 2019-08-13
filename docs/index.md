@@ -133,8 +133,8 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 <!-- docsify (latest v4.x.x)-->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 
-<!-- docsify-example-panels (latest v1.x.x) -->
-<script src="https://cdn.jsdelivr.net/npm/docsify-example-panels@1"></script>
+<!-- docsify-example-panels (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
 ```
 
 <!-- div:title-panel -->
