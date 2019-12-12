@@ -9,7 +9,6 @@
     "type": "git",
     "url": ""
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": {
     "url": "https://github.com/vagnerdomingues/docsify-example-panels/issues"
   },
