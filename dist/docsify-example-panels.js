@@ -1,13 +1,13 @@
 /*!
  * docsify-example-panels
- * v1.0.1
+ * v1.0.3
  * https://vagnerdomingues.github.io/docsify-example-panels/
  * (c) 2019 Vagner Domingues Madeira
  * MIT license
  */
 (function() {
     "use strict";
-    var version = "1.0.1";
+    var version = "1.0.3";
     function styleInject(css, ref) {
         if (ref === void 0) ref = {};
         var insertAt = ref.insertAt;
