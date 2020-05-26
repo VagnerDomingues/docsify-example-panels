@@ -9,12 +9,12 @@
 
 A [docsify.js](https://docsify.js.org) plugin for rendering example panels content from markdown.
 
-- [Documentation / Demos](https://vagnerdomingues.github.io/docsify-example-panels/#/)
+-  [Documentation / Demos](https://vagnerdomingues.github.io/docsify-example-panels/#/)
 
 ## Contact & Support
 
-- Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
-- Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
+-  Create a [GitHub issue](https://github.com/VagnerDomingues/docsify-example-panels/issues) for bug reports, feature requests, or questions
+-  Add a ⭐️ [star on GitHub](https://github.com/VagnerDomingues/docsify-example-panels) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FVagnerDomingues%2Fdocsify-example-panels&hashtags=docsify,developers,frontend,plugin,documentation) to support the project!
 
 ## License
 

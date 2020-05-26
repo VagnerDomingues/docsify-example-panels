@@ -11,14 +11,17 @@ $--docsify-example-panels-break: 1300;
   max-width: var(--docsify-example-panels-document-width) !important;
   width: var(--docsify-example-panels-document-width) !important;
 }
+
 .docsify-example-panels {
   width: var(--docsify-example-panels-wrapper-width);
 }
+
 .docsify-example-panel,
 .docsify-example-panels {
   padding: 0;
   display: inline-block;
 }
+
 .docsify-example-panel.left-panel {
   float: left;
   max-width: var(--docsify-example-panels-left-panel-width);
@@ -26,6 +29,7 @@ $--docsify-example-panels-break: 1300;
   padding: var(--docsify-example-panels-padding-inner);
   padding-left: var(--docsify-example-panels-padding-surroundings);
   background: var(--docsify-example-panels-left-panel-background);
+  
   @media only screen and (max-width: $--docsify-example-panels-break+"px") {
     float: none !important;
     max-width: 100% !important;
@@ -33,6 +37,7 @@ $--docsify-example-panels-break: 1300;
     padding: 0 !important;
   }
 }
+
 .docsify-example-panel.right-panel {
   max-width: var(--docsify-example-panels-right-panel-width);
   width: var(--docsify-example-panels-right-panel-width);
@@ -46,6 +51,7 @@ $--docsify-example-panels-break: 1300;
     padding: 0 !important;
   }
 }
+
 .docsify-example-panel.title-panel {
   padding: 0;
   padding-left: var(--docsify-example-panels-padding-surroundings);
