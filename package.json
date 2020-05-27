@@ -1,6 +1,6 @@
 {
   "name": "docsify-example-panels",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A docsify.js plugin for rendering a slate alike right example panel straight from markdown",
   "author": "Vagner Domingues Madeira",
   "license": "MIT",

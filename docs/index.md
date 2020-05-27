@@ -150,7 +150,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 <!-- div:right-panel -->
 
-<p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag, beware when copying</p>
+<p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag.</p>
 
 ```markdown
 <!--panels:start-->

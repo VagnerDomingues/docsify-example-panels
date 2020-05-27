@@ -1,13 +1,13 @@
 /*!
  * docsify-example-panels
- * v1.0.3
+ * v1.1.0
  * https://vagnerdomingues.github.io/docsify-example-panels/
- * (c) 2019 Vagner Domingues Madeira
+ * (c) 2019-2020 Vagner Domingues Madeira
  * MIT license
  */
 (function() {
     "use strict";
-    var version = "1.0.3";
+    var version = "1.1.0";
     function styleInject(css, ref) {
         if (ref === void 0) ref = {};
         var insertAt = ref.insertAt;
@@ -32,8 +32,8 @@
             style.appendChild(document.createTextNode(css));
         }
     }
-    var css = ":root{--docsify-example-panels-document-width:90%;--docsify-example-panels-wrapper-width:100%;--docsify-example-panels-padding-inner:8px 16px;--docsify-example-panels-padding-surroundings:0px;--docsify-example-panels-left-panel-background:transparent;--docsify-example-panels-left-panel-width:60%;--docsify-example-panels-right-panel-background:transparent;--docsify-example-panels-right-panel-width:40%;--docsify-example-panels-title-background:transparent}.markdown-section{max-width:90%!important;max-width:var(--docsify-example-panels-document-width)!important;width:90%!important;width:var(--docsify-example-panels-document-width)!important}.docsify-example-panels{width:100%;width:var(--docsify-example-panels-wrapper-width)}.docsify-example-panel,.docsify-example-panels{padding:0;display:inline-block}.docsify-example-panel.left-panel{float:left;max-width:60%;max-width:var(--docsify-example-panels-left-panel-width);width:60%;width:var(--docsify-example-panels-left-panel-width);padding:8px 16px;padding:var(--docsify-example-panels-padding-inner);padding-left:0;padding-left:var(--docsify-example-panels-padding-surroundings);background:transparent;background:var(--docsify-example-panels-left-panel-background)}@media only screen and (max-width:1300px){.docsify-example-panel.left-panel{float:none!important;max-width:100%!important;width:100%!important;padding:0!important}}.docsify-example-panel.right-panel{max-width:40%;max-width:var(--docsify-example-panels-right-panel-width);width:40%;width:var(--docsify-example-panels-right-panel-width);padding:8px 16px;padding:var(--docsify-example-panels-padding-inner);padding-right:0;padding-right:var(--docsify-example-panels-padding-surroundings);background:transparent;background:var(--docsify-example-panels-right-panel-background)}@media only screen and (max-width:1300px){.docsify-example-panel.right-panel{max-width:100%!important;width:100%!important;padding:0!important}}.docsify-example-panel.title-panel{padding:0;padding-left:0;padding-left:var(--docsify-example-panels-padding-surroundings);padding-right:0;padding-right:var(--docsify-example-panels-padding-surroundings);max-width:100%;width:100%;background:transparent;background:var(--docsify-example-panels-title-background)}";
-    styleInject(css, {
+    var css_248z = ":root{--docsify-example-panels-document-width:90%;--docsify-example-panels-wrapper-width:100%;--docsify-example-panels-padding-inner:8px 16px;--docsify-example-panels-padding-surroundings:0px;--docsify-example-panels-left-panel-background:transparent;--docsify-example-panels-left-panel-width:60%;--docsify-example-panels-right-panel-background:transparent;--docsify-example-panels-right-panel-width:40%;--docsify-example-panels-title-background:transparent}.markdown-section{max-width:90%!important;max-width:var(--docsify-example-panels-document-width)!important;width:90%!important;width:var(--docsify-example-panels-document-width)!important}.docsify-example-panels{width:100%;width:var(--docsify-example-panels-wrapper-width)}.docsify-example-panel,.docsify-example-panels{padding:0;display:inline-block}.docsify-example-panel.left-panel{float:left;max-width:60%;max-width:var(--docsify-example-panels-left-panel-width);width:60%;width:var(--docsify-example-panels-left-panel-width);padding:8px 16px;padding:var(--docsify-example-panels-padding-inner);padding-left:0;padding-left:var(--docsify-example-panels-padding-surroundings);background:transparent;background:var(--docsify-example-panels-left-panel-background)}@media only screen and (max-width:1300px){.docsify-example-panel.left-panel{float:none!important;max-width:100%!important;width:100%!important;padding:0!important}}.docsify-example-panel.right-panel{max-width:40%;max-width:var(--docsify-example-panels-right-panel-width);width:40%;width:var(--docsify-example-panels-right-panel-width);padding:8px 16px;padding:var(--docsify-example-panels-padding-inner);padding-right:0;padding-right:var(--docsify-example-panels-padding-surroundings);background:transparent;background:var(--docsify-example-panels-right-panel-background)}@media only screen and (max-width:1300px){.docsify-example-panel.right-panel{max-width:100%!important;width:100%!important;padding:0!important}}.docsify-example-panel.title-panel{padding:0;padding-left:var(--docsify-example-panels-padding-surroundings);padding-right:0;padding-right:var(--docsify-example-panels-padding-surroundings);max-width:100%;width:100%;background:transparent;background:var(--docsify-example-panels-title-background)}";
+    styleInject(css_248z, {
         insertAt: "top"
     });
     var commentReplaceMark = "panels:replace";
