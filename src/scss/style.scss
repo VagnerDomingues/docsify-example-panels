@@ -29,7 +29,6 @@ $--docsify-example-panels-break: 1300;
   padding: var(--docsify-example-panels-padding-inner);
   padding-left: var(--docsify-example-panels-padding-surroundings);
   background: var(--docsify-example-panels-left-panel-background);
-  
   @media only screen and (max-width: $--docsify-example-panels-break+"px") {
     float: none !important;
     max-width: 100% !important;
