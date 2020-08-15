@@ -144,7 +144,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 <!-- div:left-panel -->
 
-1.  Define a panel in markdown file using `panel:start` and `panel:end` HTML comments.
+1.  Define a panel in markdown file using `panels:start` and `panels:end` HTML comments.
 
     HTML comments are used to mark the start and end of a panel. The use of HTML comments prevents any markup from being displayed when markdown is rendered as HTML outside of your docsify site (e.g. Github, GitLab, etc).
 
@@ -164,7 +164,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 2.  Define divs within a panel in markdown file using HTML comments.
 
-    The character sequence after double dot : will be rendered as the classname of the div content. all proceeding content will be associated with that div up to start of the next div `div:class` or end of panel `panel:end` comments.
+    The character sequence after double dot : will be rendered as the classname of the div content. all proceeding content will be associated with that div up to start of the next div `div:class` or end of panel `panels:end` comments.
 
 <!-- div:right-panel -->
 
