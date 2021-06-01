@@ -153,11 +153,11 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 <p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag.</p>
 
 ```markdown
-<!--panels:start-->
+<!-- panels:start -->
 
 (...) - Awesome div wrapper
 
-<!--panels:end-->
+<!-- panels:end -->
 ```
 
 <!-- div:left-panel -->
@@ -169,21 +169,21 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 <!-- div:right-panel -->
 
 ```markdown
-<!--panels:start-->
-<!--div:title-panel-->
+<!-- panels:start -->
+<!-- div:title-panel -->
 
   (...) - Awesome title
 
-<!--div:left-panel-->
+<!-- div:left-panel -->
 
   (...) - Awesome explanation
 
-<!--div:right-panel-->
+<!-- div:right-panel -->
 
 
   (...) - Awesome example
 
-<!--panels:end-->
+<!-- panels:end -->
 ```
 
 <!-- div:left-panel -->
@@ -195,12 +195,12 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 <!-- div:right-panel -->
 
 ```markdown
-<!--panels:start-->
-<!--div:your-custom-class-->
+<!-- panels:start -->
+<!-- div:your-custom-class -->
 
 ...
 
-<!--panels:end-->
+<!-- panels:end -->
 ```
 
 <!-- div:title-panel -->
@@ -285,12 +285,12 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 <!-- div:right-panel -->
 
 ```markdown
-  <!--panels:start-->
-  <!--div:floating-cat-->
+  <!-- panels:start -->
+  <!-- div:floating-cat -->
 
   <img src="path/to/floating-cat.png">
 
-  <!--panels:end-->
+  <!-- panels:end -->
 ```
 
 <!-- div:left-panel -->
