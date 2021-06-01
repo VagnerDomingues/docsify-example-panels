@@ -153,14 +153,12 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 <!-- div:right-panel -->
 
-<p class='text-danger'> To avoid regex matches there's no whitespaces inside comment tag.</p>
-
 ```markdown
-<!-- panels:start -->
+ <!--&nbsp;panels:start&nbsp;-->
 
 (...) - Awesome div wrapper
 
-<!-- panels:end -->
+ <!--&nbsp;panels:end&nbsp;-->
 ```
 
 <!-- div:left-panel -->
@@ -172,21 +170,21 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 <!-- div:right-panel -->
 
 ```markdown
-<!-- panels:start -->
-<!-- div:title-panel -->
+<!--&nbsp;panels:start&nbsp;-->
+<!--&nbsp;div:title-panel&nbsp;-->
 
   (...) - Awesome title
 
-<!-- div:left-panel -->
+<!--&nbsp;div:left-panel&nbsp;-->
 
   (...) - Awesome explanation
 
-<!-- div:right-panel -->
+<!--&nbsp;div:right-panel&nbsp;-->
 
 
   (...) - Awesome example
 
-<!-- panels:end -->
+<!--&nbsp;panels:end&nbsp;-->
 ```
 
 <!-- div:left-panel -->
@@ -198,12 +196,12 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 <!-- div:right-panel -->
 
 ```markdown
-<!-- panels:start -->
-<!-- div:your-custom-class -->
+<!--&nbsp;panels:start&nbsp;-->
+<!--&nbsp;div:your-custom-class&nbsp;-->
 
 ...
 
-<!-- panels:end -->
+<!--&nbsp;panels:end&nbsp;-->
 ```
 
 <!-- div:title-panel -->
@@ -214,7 +212,7 @@ Just add the docsify-example-panels plugin to your `HTML` after docsify and you'
 
 ### Properties
 
-They allow you to customize panels styles without rewriting any CSS rule.
+Allows you to customize panels styles without rewriting any CSS rule.
 
 <!-- div:right-panel -->
 
@@ -260,8 +258,9 @@ You can change properties by adding a `<style>` tag or `<link>` reference to you
   }
 </style>
 ```
-
-<!-- div:left-panel -->
+<br/>
+<br/>
+<!-- div:title-panel -->
 
 ### Custom Styles
 
@@ -278,7 +277,6 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 <img src="assets/imgs/floating-cat.png">
 
 <!-- div:title-panel -->
-
 <hr>
 
 <!-- div:left-panel -->
@@ -288,12 +286,12 @@ But let's suppose you indeed wants to add a floating cat in your documentation, 
 <!-- div:right-panel -->
 
 ```markdown
-  <!-- panels:start -->
-  <!-- div:floating-cat -->
+  <!--&nbsp;panels:start&nbsp;-->
+  <!--&nbsp;div:floating-cat&nbsp;-->
 
   <img src="path/to/floating-cat.png">
 
-  <!-- panels:end -->
+  <!--&nbsp;panels:end&nbsp;-->
 ```
 
 <!-- div:left-panel -->

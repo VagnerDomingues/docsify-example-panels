@@ -64,6 +64,7 @@
     <div id="app"></div>
 
     <!-- JavaScript -->
+    
     <script>
         // Docsify
         window.$docsify = {
@@ -93,6 +94,17 @@
                 placeholder: 'Search...'
             }
         };
+    </script>
+    <script>
+        // Fix regex matching self-demo code snippets
+        function pluginSync(hook, vm) {
+            hook.ready(function() {
+                Array.prototype.map.call(document.getElementsByTagName('span'), i => { 
+                    i.innerText = i.innerText.replace(/&nbsp;/g, " ")
+                });
+            });
+        }
+        $docsify.plugins = [].concat($docsify.plugins, pluginSync);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
