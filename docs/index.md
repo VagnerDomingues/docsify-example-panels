@@ -18,13 +18,16 @@ A [docsify.js](https://docsify.js.org) plugin for rendering example panels conte
 
 <!-- div:left-panel -->
 
-If you are on widescreen, checkout the right side panels.
+If you are on widescreen, checkout the *right* panel, *right* there →
 
 <!-- div:right-panel -->
 
-This panel is a demo. but you can see more in:
+This is an example panel.
+
+You can see it's usage in practice in the docs listed below:
 
 -   [Fairlay API](https://fairlay.com/api)
+-   [FLAP services](https://docs.flap.cloud/#/create_new_service)
 
 <small>please contact me if you use docsify-example-panels. i would like to display it here too.</small>
 
