@@ -87,7 +87,7 @@ You can see it's usage in practice in the docs listed below:
 
 **Limitations**
 
-- *Nesting* (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
+*Nesting* (i.e panels within panels) all pannels are rendered as siblings, Nesting only avaiable throught post-render javascript code.
 
 <!-- div:right-panel -->
 
