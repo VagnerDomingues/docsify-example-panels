@@ -27,7 +27,7 @@ This is an example panel.
 You can see it's usage in practice in the docs listed below:
 
 -   [Fairlay API](https://fairlay.com/api)
--   [FLAP services](https://docs.flap.cloud/#/create_new_service)
+-   [FLAP services](https://docs.flap.cloud/#/create_new_service?id=special-files)
 
 <small>please contact me if you use docsify-example-panels. i would like to display it here too.</small>
 
